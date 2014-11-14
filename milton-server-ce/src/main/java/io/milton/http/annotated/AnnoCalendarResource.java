@@ -56,7 +56,7 @@ public class AnnoCalendarResource extends AnnoCollectionResource implements Cale
 
 	@Override
 	public SupportedCalendarComponentList getSupportedComponentSet() {
-		return SupportedCalendarComponentList.VEVENT_VFREEBUSY;
+	    return SupportedCalendarComponentList.asList(CalendarResource.ComponentType.VEVENT, CalendarResource.ComponentType.VFREEBUSY, CalendarResource.ComponentType.VTODO);
 	}
 
 	@Override
